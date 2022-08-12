@@ -5,3 +5,7 @@ textarea{
     background-color: rgb(208, 242, 231);
     border: 2px solid aquamarine;
 }
+
+.main{
+    margin-top: 1.5rem;
+}

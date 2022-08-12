@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import NavBar from './Components/NavigationBar/NavBar';
 import LeftContainer from './Components/Translateor/LeftContainer';
-import OutputBox from './Components/Translateor/OutputBox';
+import RightContainer from './Components/Translateor/RightContainer';
 import TranslateButton from './Components/Translateor/TranslateButton';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <main>
       <LeftContainer />
       <TranslateButton />
-      <OutputBox />
+      <RightContainer />
       </main>
     </div>
   );
