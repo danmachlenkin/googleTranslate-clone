@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 5rem;
+  background-color: #8a2b06;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.header h1{
+    justify-content: center;
+}
+
+.header ul {
+  align-items: flex-end;
+  display: flex;
+}
+
+.header li {
+  color: white;
+  margin: 0 20px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+li:hover{
+    border-bottom: 2px solid white;
+}
+
+
