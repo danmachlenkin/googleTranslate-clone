@@ -1,0 +1,10 @@
+.right__textarea{
+    border: 2px solid black;
+    width: 350px;
+    height:150px;
+    padding: 15px;
+}
+
+.right__container{
+    margin-right: 5rem;
+}

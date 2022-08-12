@@ -13,6 +13,15 @@
   }
 }
 
+.App main{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  margin: auto;
+  margin-top: 10rem;
+  height: 75vh;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
