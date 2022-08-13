@@ -1,22 +1,28 @@
-import React, {useState} from "react";
+import React from "react";
 import classes from "./RightContainer.module.css";
 import Select from "react-select";
 
-const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
+const selectLanguageOptions = [
+  { value: "en", label: "English" },
+  { value: "iw", label: "Hebrew" },
+  { value: "es", label: "Spanish" },
+  { value: "pt", label: "Portuguese" },
+  { value: "ru", label: "Russian" },
 ];
 
 const RightContainer = (props) => {
-  const [translateToLang, setTranslateToLang] = useState('')
+  
+  const chosenLanguageHandler = (event) => {
+      const chosenLanguageValue = event.value;
+      props.translateToValue(chosenLanguageValue);
+  }
 
   return (
     <div className={classes.right__container}>
       <Select
         placeholder="Translate To..."
-        onChange={setTranslateToLang}
-        options={options}
+        onChange={chosenLanguageHandler}
+        options={selectLanguageOptions}
       />
       <div className={classes.right__textarea}>
         <p>Some Translation...</p>

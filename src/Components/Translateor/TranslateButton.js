@@ -1,10 +1,17 @@
 import React from "react";
-import classes from './TranslateButton.module.css';
+import classes from "./TranslateButton.module.css";
 
-const TranslateButton = (props) => {
-    return <button className={classes.btn2}>
-        Translate!
-    </button>
-}
+const TranslateButton = ({ translateFrom, translateTo }) => {
+  let translateFromLanguage = translateFrom;
+  let translateToLanguage = translateTo;
+
+  const translateTextHandler = () => {};
+
+  return(
+  <button className={classes.btn2} onClick={translateTextHandler}>
+    Translate!
+  </button>
+  )
+};
 
 export default TranslateButton;

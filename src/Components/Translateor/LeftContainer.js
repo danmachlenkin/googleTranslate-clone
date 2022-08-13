@@ -1,24 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import InputBox from "./InputBox";
 import classes from "./LeftContainer.module.css";
 import Select from "react-select";
 
-const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
+const selectLanguageOptions = [
+  { value: "en", label: "English" },
+  { value: "iw", label: "Hebrew" },
+  { value: "es", label: "Spanish" },
+  { value: "pt", label: "Portuguese" },
+  { value: "ru", label: "Russian" },
 ];
 
 const LeftContainer = (props) => {
-  const [selectedLang, setSelectedLang] = useState("");
-  console.log(selectedLang);
+    const chosenLanguageHandler = (event) => {
+        const chosenLanguageValue = event.value;
+        props.translateFromValue(chosenLanguageValue);
+    }
+
+
+
   return (
     <div className={classes.left__container}>
       <div>
         <Select
           placeholder="Translate from..."
-          onChange={setSelectedLang}
-          options={options}
+          onChange={chosenLanguageHandler}
+          options={selectLanguageOptions}
         />
       </div>
       <InputBox />
