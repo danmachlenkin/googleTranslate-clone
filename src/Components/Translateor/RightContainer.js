@@ -11,6 +11,8 @@ const selectLanguageOptions = [
 ];
 
 const RightContainer = (props) => {
+
+  let translatedText = props.translatedText;
   
   const chosenLanguageHandler = (event) => {
       const chosenLanguageValue = event.value;
@@ -25,7 +27,7 @@ const RightContainer = (props) => {
         options={selectLanguageOptions}
       />
       <div className={classes.right__textarea}>
-        <p>Some Translation...</p>
+        <p>{translatedText}</p>
       </div>
     </div>
   );

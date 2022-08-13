@@ -17,7 +17,10 @@ const LeftContainer = (props) => {
         props.translateFromValue(chosenLanguageValue);
     }
 
-
+    const userSubmittedTextHandler = (userInput)=> {
+        let userSubmittedText = userInput;
+        props.userSubmittedText(userSubmittedText);
+    }
 
   return (
     <div className={classes.left__container}>
@@ -28,7 +31,7 @@ const LeftContainer = (props) => {
           options={selectLanguageOptions}
         />
       </div>
-      <InputBox />
+      <InputBox userSubmittedText={userSubmittedTextHandler}/>
     </div>
   );
 };
