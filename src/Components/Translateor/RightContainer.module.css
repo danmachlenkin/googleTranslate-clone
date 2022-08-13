@@ -4,8 +4,14 @@
     height:150px;
     padding: 15px;
     margin-top: 1.5rem;
+    display: flex;
+
 }
 
 .right__container{
     margin-right: 5rem;
+}
+
+p{
+    margin: 0;
 }
