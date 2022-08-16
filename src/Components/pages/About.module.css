@@ -1,5 +1,16 @@
 .container{
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
+    margin:  0 auto;
+}
+
+.content{
+    width: 50%;
+    font: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 1.5px;
+    margin: auto;
 }
